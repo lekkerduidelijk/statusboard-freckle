@@ -13,4 +13,61 @@ PHP script that fetches [Freckle](http://letsfreckle.com) time entries, for [Pan
 * Done!
  
 
-More info on options in the [Graph Tutorial (PDF)](http://www.panic.com/statusboard/docs/graph_tutorial.pdf).
+## Sample output
+
+If properly setup your output should look something like this.
+
+```
+
+{
+  "graph" : {
+    "title" : "Hours last week",
+    "total" : true,
+    "type"  : "bar",
+    "refreshEveryNSeconds" : 1800,
+    "yAxis" : {
+      "units" : {
+        "suffix" : "h"
+      }
+    },
+    "datasequences" : [
+      {
+        "title" : "Freckle",
+        "color" : "orange",
+        "datapoints" : [
+          {
+            "title" : "Fri",
+            "value" : 7.42,
+          },
+          {
+            "title" : "Thu",
+            "value" : 8.25,
+          },
+          {
+            "title" : "Wed",
+            "value" : 6.5,
+          },
+          {
+            "title" : "Tue",
+            "value" : 5.75,
+          },
+          {
+            "title" : "Mon",
+            "value" : 9.42,
+          },
+          {
+            "title" : "Sun",
+            "value" : 0.42,
+          },
+          {
+            "title" : "Sat",
+            "value" : 4.25,
+          },
+        ]
+      }
+    ]
+  }
+}
+```
+
+More info on available options, check the [Graph Tutorial (PDF)](http://www.panic.com/statusboard/docs/graph_tutorial.pdf).
