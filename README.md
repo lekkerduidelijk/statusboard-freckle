@@ -17,6 +17,9 @@ PHP script that fetches [Freckle](http://letsfreckle.com) time entries, for [Pan
 
 If properly setup your output should look something like this.
 
+<img src="https://raw.github.com/lekkerduidelijk/statusboard-freckle/master/screenshot.png">
+
+
 ```
 
 {
